@@ -68,7 +68,11 @@ Lembre-se que você pode consultar nosso conteúdo sobre [Git & GitHub](https://
 
 ## O que deverá ser desenvolvido
 
-- Um site onde se deve adivinhar a cor
+- Manipular o DOM.
+
+- Manipular o Javascript.
+
+- Manipular o CSS.
 
 ---
 
