@@ -72,14 +72,6 @@ Lembre-se que você pode consultar nosso conteúdo sobre [Git & GitHub](https://
 
 ## O que deverá ser desenvolvido
 
-- Manipular o DOM.
-
-- Manipular o Javascript.
-
-- Manipular o CSS.
-
----
-
 ## Data de Entrega
 
   - Serão `X` dias de projeto.
