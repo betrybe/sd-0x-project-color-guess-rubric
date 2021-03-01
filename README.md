@@ -23,15 +23,15 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
 - [Requisitos do projeto](#requisitos-do-projeto)
 
     `Requisitos obrigatórios:`
-    - [1 - Adicione no seu site um título com o nome do seu jogo](#1---crie-uma-função-usando-o-operador-)
-    - [2 - Adicione um texto com o código RGB a ser adivinhado](#2---crie-uma-função-que-calcule-a-área-do-triângulo)
-    - [3 - Adicione a página opções de cores para serem adivinhadas](#3---crie-uma-função-que-divida-a-frase)
-    - [4 - Adicione cores nas bolas elas devem ser geradas dinâmicamente](#4---crie-uma-função-que-use-concatenação-de-strings)
-    - [5 - Clicar em um circulo colorido, deve ser mostrado um texto indicando se está correto](#5---crie-uma-função-que-calcule-a-quantidade-de-pontos-no-futebol)
-    - [6 - Crie um botão para iniciar/reiniciar o jogo](#6---crie-uma-função-que-calcule-a-repetição-do-maior-número)
+    - [1 - Adicione no seu site um título com o nome do seu jogo](#1---adicione-no-seu-site-um-título-com-o-nome-do-seu-jogo)
+    - [2 - Adicione um texto com o código RGB a ser adivinhado](#2---adicione-um-texto-com-o-código-rgb-a-ser-adivinhado)
+    - [3 - Adicione a página opções de cores para serem adivinhadas](#3---adicione-a-página-opções-de-cores-para-serem-adivinhadas)
+    - [4 - Adicione cores nas bolas elas devem ser geradas dinâmicamente](#4---adicione-cores-nas-bolas-elas-devem-ser-geradas-dinâmicamente)
+    - [5 - Clicar em um circulo colorido, deve ser mostrado um texto indicando se está correto](#5---clicar-em-um-circulo-colorido-deve-ser-mostrado-um-texto-indicando-se-está-correto)
+    - [6 - Crie um botão para iniciar/reiniciar o jogo](#6---crie-um-botão-para-iniciarreiniciar-o-jogo)
 
     `Requisitos bônus:`
-    - [7 - Crie um placar que incremente 3 pontos para cada acerto no jogo](#11---crie-uma-função-de-número-de-telefone)
+    - [7 - Crie um placar que incremente 3 pontos para cada acerto no jogo](#7---crie-um-placar-que-incremente-3-pontos-para-cada-acerto-no-jogo)
 - [Depois de terminar o desenvolvimento](#depois-de-terminar-o-desenvolvimento)
 - [Revisando um pull request](#revisando-um-pull-request)
 - [Avisos Finais](#avisos-finais)
