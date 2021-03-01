@@ -40,7 +40,11 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
 
 # Habilidades
 
-- Saber gerenciar eventos com `JavaScript` , criar funções e definir fluxos lógicos são habilidades que você vai utilizar no seu dia a dia.
+- Manipular o DOM.
+
+- Manipular o Javascript.
+
+- Manipular o CSS.
 
 ---
 
