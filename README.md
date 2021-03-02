@@ -14,6 +14,7 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
 - [Habilidades](#habilidades)
 - [Entregáveis](#entregáveis)
   - [O que deverá ser desenvolvido](#o-que-deverá-ser-desenvolvido)
+  - [Desenvolvimento](#desenvolvimento)
   - [Data de Entrega](#data-de-entrega)
 - [Instruções para entregar seu projeto](#instruções-para-entregar-seu-projeto)
   - [Antes de começar a desenvolver](#antes-de-começar-a-desenvolver)
@@ -61,6 +62,12 @@ Este _Pull Request_ deverá conter os arquivos `index.html`, `style.css` e `scri
 - Será desenvolvida uma aplicação utilizando JavaScript, HTML5 e CSS3.
 
 - Nesta aplicação deverá ser possível jogar um jogo de adivinhação de cores e sua pontuação deverá atualizar de acordo com os acertos.
+
+---
+
+## Desenvolvimento
+
+- Desenvolva uma aplicação de um jogo de adivinhação de cores.
 
 ---
 
@@ -135,6 +142,8 @@ Este _Pull Request_ deverá conter os arquivos `index.html`, `style.css` e `scri
   5. `git push -u nome-da-branch` _(para enviar o commit para o repositório remoto na primeira vez que fizer o `push` de uma nova branch)_
 
 ---
+
+### Como desenvolver
 
 ## Linter
 
