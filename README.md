@@ -1,17 +1,95 @@
+### Termos e acordos
+
+Ao iniciar este projeto, você concorda com as diretrizes do Código de Ética e Conduta e do
+Manual da Pessoa Estudante da Trybe.
+
 # Boas vindas ao repositório do projeto de adivinhação de Cor!
 
 Você já usa o GitHub diariamente para desenvolver os exercícios, certo? Agora, para desenvolver os projetos, você deverá seguir as instruções a seguir. Fique atento a cada passo, e se tiver qualquer dúvida, nos envie por _Slack_! #vqv 🚀
 
 Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu projeto a partir desse repositório, utilizando uma branch específica e um _Pull Request_ para colocar seus códigos.
 
-### 🗒 ANTES DE COMEÇAR A DESENVOLVER:
+# Sumário
+
+- [Habilidades](#habilidades)
+- [Entregáveis](#entregáveis)
+  - [O que deverá ser desenvolvido](#o-que-deverá-ser-desenvolvido)
+  - [Desenvolvimento](#desenvolvimento)
+  - [Data de Entrega](#data-de-entrega)
+- [Instruções para entregar seu projeto](#instruções-para-entregar-seu-projeto)
+  - [Antes de começar a desenvolver](#antes-de-começar-a-desenvolver)
+  - [Durante o desenvolvimento](#durante-o-desenvolvimento)
+- [Como desenvolver](#como-desenvolver)
+  - [Linter](#linter)
+- [Requisitos do projeto](#requisitos-do-projeto)
+
+    `Requisitos obrigatórios:`
+    - [1 - Adicione no seu site um título com o nome do seu jogo](#1---adicione-no-seu-site-um-título-com-o-nome-do-seu-jogo)
+    - [2 - Adicione um texto com o código RGB a ser adivinhado](#2---adicione-um-texto-com-o-código-rgb-a-ser-adivinhado)
+    - [3 - Adicione a página opções de cores para serem adivinhadas](#3---adicione-a-página-opções-de-cores-para-serem-adivinhadas)
+    - [4 - Adicione cores nas bolas elas devem ser geradas dinâmicamente](#4---adicione-cores-nas-bolas-elas-devem-ser-geradas-dinâmicamente)
+    - [5 - Clicar em um circulo colorido, deve ser mostrado um texto indicando se está correto](#5---clicar-em-um-circulo-colorido-deve-ser-mostrado-um-texto-indicando-se-está-correto)
+    - [6 - Crie um botão para iniciar/reiniciar o jogo](#6---crie-um-botão-para-iniciarreiniciar-o-jogo)
+
+    `Requisitos bônus:`
+    - [7 - Crie um placar que incremente 3 pontos para cada acerto no jogo](#7---crie-um-placar-que-incremente-3-pontos-para-cada-acerto-no-jogo)
+- [Depois de terminar o desenvolvimento](#depois-de-terminar-o-desenvolvimento)
+- [Revisando um pull request](#revisando-um-pull-request)
+- [Avisos Finais](#avisos-finais)
+
+---
+
+# Habilidades
+
+- Manipular o DOM.
+
+- Manipular o Javascript.
+
+- Manipular o CSS.
+
+---
+
+# Entregáveis
+
+Para entregar o seu projeto você deverá criar um _Pull Request_ neste repositório.
+
+Este _Pull Request_ deverá conter os arquivos `index.html`, `style.css` e `script.js` que conterão seu código HTML, CSS e JavaScript, respectivamente.
+
+---
+
+## O que deverá ser desenvolvido
+
+- Será desenvolvida uma aplicação utilizando JavaScript, HTML5 e CSS3.
+
+- Nesta aplicação deverá ser possível jogar um jogo de adivinhação de cores e sua pontuação deverá atualizar de acordo com os acertos.
+
+---
+
+## Desenvolvimento
+
+- Desenvolva uma aplicação de um jogo de adivinhação de cores.
+
+---
+
+## Data de Entrega
+
+  - Serão `X` dias de projeto.
+  - Data de entrega para avaliação final do projeto: `DD/MM/YYYY - 14:00h`.
+
+---
+
+### Antes de começar a desenvolver:
 
 1. Clone o repositório
-  * `git@github.com:tryber/sd-0x-project-color-guess-rubric.git`.
+  * `git@github.com:tryber/sd-0x-project-color-guess.git`.
   * Entre na pasta do repositório que você acabou de clonar:
-    * `cd sd-0x-project-color-guess-rubric`
+    * `cd sd-0x-project-color-guess`
 
-2. Crie uma branch a partir da branch `master`
+2. Instale as dependências e inicialize o projeto
+  * Instale as dependências:
+    * `npm install`
+
+3. Crie uma branch a partir da branch `master`
   * Verifique que você está na branch `master`
     * Exemplo: `git branch`
   * Se não estiver, mude para a branch `master`
@@ -20,13 +98,13 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
     * Você deve criar uma branch no seguinte formato: `nome-de-usuario-nome-do-projeto`
     * Exemplo: `git checkout -b joaozinho-project-color-guess`
 
-3. Crie na raiz do projeto os arquivos que você precisará desenvolver:
+4. Crie na raiz do projeto os arquivos que você precisará desenvolver:
   * Verifique que você está na raiz do projeto
-    * Exemplo: `pwd` -> o retorno vai ser algo tipo _/Users/joaozinho/code/**sd-0x-project-color-guess-rubric**_
+    * Exemplo: `pwd` -> o retorno vai ser algo tipo _/Users/joaozinho/code/**sd-0x-project-color-guess**_
   * Crie os arquivos index.html, style.css e script.js
     * Exemplo: `touch index.html style.css script.js`
 
-4. Adicione as mudanças ao _stage_ do Git e faça um `commit`
+5. Adicione as mudanças ao _stage_ do Git e faça um `commit`
   * Verifique que as mudanças ainda não estão no _stage_
     * Exemplo: `git status` (devem aparecer listados os novos arquivos em vermelho)
   * Adicione o novo arquivo ao _stage_ do Git
@@ -38,38 +116,53 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
         * `git commit -m 'iniciando o projeto. VAMOS COM TUDO :rocket:'` (fazendo o primeiro commit)
         * `git status` (deve aparecer uma mensagem tipo _nothing to commit_ )
 
-5. Adicione a sua branch com o novo `commit` ao repositório remoto
+6. Adicione a sua branch com o novo `commit` ao repositório remoto
   * Usando o exemplo anterior: `git push -u origin joaozinho-project-color-guess`
 
-6. Crie um novo `Pull Request` _(PR)_
-  * Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-0x-project-color-guess-rubric/pulls)
+7. Crie um novo `Pull Request` _(PR)_
+  * Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-0x-project-color-guess/pulls)
   * Clique no botão verde _"New pull request"_
   * Clique na caixa de seleção _"Compare"_ e escolha a sua branch **com atenção**
   * Clique no botão verde _"Create pull request"_
   * Adicione uma descrição para o _Pull Request_, um título claro que o identifique, e clique no botão verde _"Create pull request"_
   * **Não se preocupe em preencher mais nada por enquanto!**
-  * Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/sd-0x-project-color-guess-rubric/pulls) e confira que o seu _Pull Request_ está criado
+  * Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/sd-0x-project-color-guess/pulls) e confira que o seu _Pull Request_ está criado
+
 ---
 
-# Entregáveis
+## Durante o desenvolvimento
 
-Para entregar o seu projeto você deverá criar um _Pull Request_ neste repositório.
+* Faça `commits` das alterações que você fizer no código regularmente
 
-Este _Pull Request_ deverá conter os arquivos `index.html`, `style.css` e `script.js` que conterão seu código HTML, CSS e JavaScript, respectivamente.
+* Lembre-se de sempre após um (ou alguns) `commits` atualizar o repositório remoto
 
-## Prazo para entrega
+* Os comandos que você utilizará com mais frequência são:
+  1. `git status` _(para verificar o que está em vermelho - fora do stage - e o que está em verde - no stage)_
+  2. `git add` _(para adicionar arquivos ao stage do Git)_
+  3. `git commit` _(para criar um commit com os arquivos que estão no stage do Git)_
+  4. `git push` _(para enviar o commit para o repositório remoto após o passo anterior)_
+  5. `git push -u nome-da-branch` _(para enviar o commit para o repositório remoto na primeira vez que fizer o `push` de uma nova branch)_
 
-O Prazo para entrega é de **7 dias corridos** após o último dia de projeto.
+---
 
-**Exemplo:** Se o último dia de projeto aconteceu na **quarta-feira, dia 17 de junho**, seu prazo final de entrega será na **quarta-feira 24 de junho** às **14 horas**.
+### Como desenvolver
 
-Vale ressaltar que os projetos podem ter mais de um dia de duração, por isso o prazo de **7 dias** é contado à partir do último dia de projeto.
+## Linter
 
-## ⚠️ É importante que seus arquivos tenham exatamente estes nomes! ⚠️
+Para garantir a qualidade do código, vamos utilizar neste projeto os linters `ESLint` e `StyleLint`.
+Assim o código estará alinhado com as boas práticas de desenvolvimento, sendo mais legível
+e de fácil manutenção! Para rodá-los localmente no projeto, execute os comandos abaixo:
 
-Você pode adicionar outros arquivos se julgar necessário. Qualquer dúvida, procure a Pessoa Instrutora que te acompanha.
+  ```bash
+npm run lint
+npm run lint:styles
+```
 
-Lembre-se que você pode consultar nosso conteúdo sobre [Git & GitHub](https://course.betrybe.com/intro/git/) sempre que precisar!
+Quando é executando o comando `npm run lint:styles`, ele irá avaliar se os seguintes arquivos com a extensão `CSS` está com o padrão correto.
+
+Quando é executando o comando `npm run lint`, ele irá avaliar se os seguintes arquivos com a extensão `JS` e `JSX` está com o padrão correto.
+
+⚠ **NESTE PROJETO O STYLELINT e ESLINT NÃO SERÁ AVALIADO. VOCÊ PODE RODAR O TESTE LOCALMENTE E FAZER AS CORREÇÕES SE DESEJAR!** ⚠
 
 ---
 
@@ -129,88 +222,101 @@ Neste projeto, você implementará um adivinhador de cor RGB. Ou seja, dada uma 
 
 ## Requisitos do projeto
 
-### 1 - O seu site deve possuir um título com o nome do seu jogo
+### 1 - Adicione no seu site um título com o nome do seu jogo
 
-- O **id** do seu título deve ser `title`
+**O que será verificado:**
 
-### 2 - A página deve possuir o texto com o código RGB a ser adivinhado
+- Será verificado se o **id** do título é `title`
 
-- O seu **id** deve ser `rgb-color`
-- Esse texto deve conter os três números das cores RGB a ser adivinhada, no seguinte formato: `(168, 34, 1)`
+### 2 - Adicione um texto com o código RGB a ser adivinhado
 
-### 3 - A página deve conter opções de cores para serem adivinhadas
+**O que será verificado:**
 
-- Deve conter 6 circulos como opção de cor de adivinhação
-- A **class** de todos os circulos deve ser `ball`
+- Será verificado se o seu id deve ser rgb-color
 
-### 4 - As cores das bolas devem ser geradas dinâmicamente
+- Será verificado se o texto deve conter os três números das cores RGB a ser adivinhada, no seguinte formato: `(168, 34, 1)`
 
-- Ao carregar a página, as cores de cada um dos 6 circulos coloridos deve ser geradas via JavaScript
+### 3 - Adicione a página opções de cores para serem adivinhadas
 
-### 5 - Ao clicar em um circulo colorido, deve ser mostrado um texto indicando se está correto
+**O que será verificado:**
 
-- O seu **id** do elemento deve ser `answer`
-- Quando o jogo é iniciado, o texto exibido deve ser `"Escolha uma cor"`
-- Se o circulo colorido for o **correto**, deve ser exibido o texto `"Acertou!"`
-- Se o circulo colorido for o **incorreta**, deve ser exibido o texto `"Errou! Tente novamente!"`
+- Será verificado que deve conter 6 circulos como opção de cor de adivinhação
+
+- Será verificado que a class de todos os circulos deve ser ball
+
+### 4 - Adicione cores nas bolas elas devem ser geradas dinâmicamente
+
+**O que será verificado:**
+
+- Será verificado que ao carregar a página, as cores de cada um dos 6 circulos coloridos deve ser geradas via JavaScript
+
+### 5 - Clicar em um circulo colorido, deve ser mostrado um texto indicando se está correto
+
+**O que será verificado:**
+
+- Será verificado que o seu **id** do elemento deve ser `answer`
+
+- Será verificado que quando o jogo é iniciado, o texto exibido deve ser `"Escolha uma cor"`
+
+- Será verificado se o circulo colorido for o **correto**, deve ser exibido o texto "Acertou!"
+
+- Será verificado se o circulo colorido for o **incorreta**, deve ser exibido o texto "Errou! Tente novamente!"
 
 ### 6 - Crie um botão para iniciar/reiniciar o jogo
 
-- O botão deve ter o **id** `reset-game`.
-- Ao clicar no botão, novas cores devem ser geradas via JavaScript e o elemento `rgb-color` deve ser atualizado
-- Ao clicar no botão, o elemento `answer` deve voltar ao estado inicial, exibindo o texto `"Escolha uma cor"`
+**O que será verificado:**
+
+- Será verificado que o botão deve ter o id reset-game
+
+- Será verificado que ao clicar no botão, novas cores devem ser geradas via JavaScript e o elemento rgb-color deve ser atualizado
+
+- Será verificado que ao clicar no botão, o elemento answer deve voltar ao estado inicial, exibindo o texto "Escolha uma cor"
 
 ## BÔNUS
 
 ### 7 - Crie um placar que incremente 3 pontos para cada acerto no jogo
 
-- O elemento deve ter o **id** `score`.
-- O valor inicial dele deve ser 0.
-- A cada acerto, é incrementado 3 pontos ao placar
-- Ao clicar no botão reiniciar, o placar **NÃO** deve ser resetado
+**O que será verificado:**
+
+- Será verificado que o elemento deve ter o **id** `score`.
+
+- Será verificado que o valor inicial dele deve ser 0.
+
+- Será verificado que a cada acerto, é incrementado 3 pontos ao placar
+
+- Será verificado que ao clicar no botão reiniciar, o placar NÃO deve ser resetado
 
 ---
 
-### DURANTE O DESENVOLVIMENTO
+## Depois de terminar o desenvolvimento
 
-* ⚠ **RECOMENDAMOS QUE VOCÊ FIQUE ATENTO ÀS ISSUES DO CODE CLIMATE, PARA RESOLVÊ-LAS ANTES DE FINALIZAR O DESENVOLVIMENTO. A PARTIR DO BLOCO 6 SEU PROJETO SOMENTE SERÁ AVALIADO SE NÃO TIVER ISSUES NO CODE CLIMATE!** ⚠
+Para **"entregar"** seu projeto, siga os passos a seguir:
 
-* Faça `commits` das alterações que você fizer no código regularmente;
+* Vá até a página **DO SEU** _Pull Request_, adicione a label de _"code-review"_ e marque seus colegas
+  * No menu à direita, clique no _link_ **"Labels"** e escolha a _label_ **code-review**
+  * No menu à direita, clique no _link_ **"Assignees"** e escolha **o seu usuário**
+  * No menu à direita, clique no _link_ **"Reviewers"** e digite `students`, selecione o time `tryber/students-sd-0x`
 
-* Lembre-se de sempre após um ~~(ou alguns)~~ `commits` atualizar o repositório remoto (o famoso `git push`);
+Se ainda houver alguma dúvida sobre como entregar seu projeto, [aqui tem um video explicativo](https://vimeo.com/362189205).
 
-* Os comandos que você utilizará com mais frequência são:
-
-  1. `git status` _(para verificar o que está em vermelho - fora do stage - e o que está em verde - no stage)_;
-
-  2. `git add` _(para adicionar arquivos ao stage do Git)_;
-
-  3. `git commit` _(para criar um commit com os arquivos que estão no stage do Git)_;
-
-  5. `git push -u nome-da-branch` _(para enviar o commit para o repositório remoto na primeira vez que fizer o `push` de uma nova branch)_;
-
-  4. `git push` _(para enviar o commit para o repositório remoto após o passo anterior)_.
+⚠ Lembre-se que garantir que todas as _issues_ comentadas pelo **Lint** estão resolvidas! ⚠
 
 ---
 
-### DEPOIS DE TERMINAR O DESENVOLVIMENTO - OPCIONAL, PORÉM MUITO IMPORTANTE! <3
+### Revisando um pull request
 
-Para sinalizar que o seu projeto está pronto para o _"Code Review"_ dos seus colegas, faça o seguinte:
+À medida que você e as outras pessoas que estudam na Trybe forem entregando os projetos, vocês receberão um alerta via Slack para também fazer a revisão dos Pull Requests dos seus colegas. Fiquem atentos às mensagens do "Pull Reminders" no Slack!
 
-* Vá até a página **DO SEU** _Pull Request_, adicione a label de _"code-review"_ e marque seus colegas:
-
-  * No menu à direita, clique no _link_ **"Labels"** e escolha a _label_ **code-review**;
-
-  * No menu à direita, clique no _link_ **"Assignees"** e escolha **o seu usuário**;
-
-  * No menu à direita, clique no _link_ **"Reviewers"** e digite `students`, selecione o time `tryber/students-sd-00`.
-
-Caso tenha alguma dúvida, [aqui tem um video explicativo](https://vimeo.com/362189205).
+Use o material que você já viu sobre [Code Review](https://course.betrybe.com/real-life-engineer/code-review/) para te ajudar a revisar os projetos que chegaram para você.
 
 ---
 
-### REVISANDO UM PULL REQUEST
+# Avisos Finais
 
-Use o conteúdo sobre [Code Review](https://course.betrybe.com/real-life-engineer/code-review/) para te ajudar a revisar os _Pull Requests_.
+Ao finalizar e submeter o projeto, não se esqueça de avaliar sua experiência preenchendo o formulário. Leva menos de 3 minutos!
 
-#VQV 🚀
+Link: [FORMULÁRIO DE AVALIAÇÃO DE PROJETO](https://be-trybe.typeform.com/to/ZTeR4IbH)
+
+O avaliador automático não necessariamente avalia seu projeto na ordem em que os requisitos aparecem no readme. Isso acontece para deixar o processo de avaliação mais rápido. Então, não se assuste se isso acontecer, ok?
+
+---
